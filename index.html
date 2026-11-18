@@ -1,41 +1,23 @@
-<!DOCTYPE html><!--文書型宣言（DOCTYPE宣言）。HTML5用-->
-<html lang="ja"><!--headとbodyを格納。使用言語が日本語という定義-->
-	<head><!--メタデータ（属性情報）を格納する領域-->
-		<meta charset="utf-8"><!--文字エンコーディングはUTF-8-->
-		<meta name="description" content="AXIS ARCHITECTS（アクシス建築設計事務所）は、徹底したデータ分析とロジックから空間を導き出します。高度AI技術の活用と環境負荷低減を両立する持続可能な設計で、自然環境と未来の都市に調和する建築を提案します。"><!--検索結果に表示されるページの説明文。titleの補足（140文字）-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--レスポンシブ対応用。横幅はデバイスの画面幅に合わせ、初期表示の拡大率は等倍。デバイス別のスタイルはCSSで設定-->
-		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet"><!--検索エンジンのクローラーへの指示。ページを登録（noindex）せずリンクをたどらない（nofollow）ように、キャッシュを取得せず（noarchive）スニペットを表示しない（nosnippet）ように-->
-		<meta property="og:title" content="AXIS ARCHITECTS（アクシス建築設計事務所）"><!--SNSでシェアされた時のページのタイトル-->
-		<meta property="og:description" content="AXIS ARCHITECTS（アクシス建築設計事務所）は、高度AI技術の活用と環境負荷低減を両立する持続可能な設計で、自然環境と未来の都市に調和する建築を提案します。"><!--SNSでシェアされた時の説明文-->
-		<meta property="og:url" content="https://sakainao-portfolio.github.io/axis/"><!--このページのURL-->
-		<meta property="og:image" content="image/axis_logo_ogp.png"><!--SNSでシェアされた時の表示したい画像のURL-->
-		<meta property="og:type" content="website"><!--このページの種類（articleは記事や下層ページ、blogはブログ、websiteはサイトのトップページ-->
-		<meta property="og:site_name" content="AXIS ARCHITECTS（アクシス建築設計事務所）"><!--このページが所属するWebサイトの名前-->
-		<link rel="stylesheet" href="css/style.css"><!--CSS用。typeは不要。デバイス別のスタイルも一元管理が推奨-->
-		<!--<link rel="icon" href="image/favicon.ico" sizes="32x32">ファビコンのico用。shortcut省略が標準。sizes="any"だとブラウザごとに対応-->
-		<link rel="icon" href="image/favicon.png" type="image/png"><!--ファビコンのpng用。type="image/png"付けるの推奨。高画質用にsizes=""を複数用意するのも可-->
-		<!--<link rel="icon" href="image/icon.svg" type="image/svg+xml">ファビコンのsvg用。SVGファイルの使用にはtype="image/svg+xml"が必要-->
-		<link rel="apple-touch-icon" href="image/apple-touch-icon.png"><!--ファビコンのスマホ・タブレット用。-->
-
-		<title>AXIS ARCHITECTS（アクシス建築設計事務所）</title><!--検索エンジンに把握してもらいたいページの内容や目的を簡潔（30文字）かつ魅力的に説明-->
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="AXIS ARCHITECTS（アクシス建築設計事務所）は、徹底したデータ分析とロジックから空間を導き出します。高度AI技術の活用と環境負荷低減を両立する持続可能な設計で、自然環境と未来の都市に調和する建築を提案します。">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+		<meta property="og:title" content="AXIS ARCHITECTS（アクシス建築設計事務所）">
+		<meta property="og:description" content="AXIS ARCHITECTS（アクシス建築設計事務所）は、高度AI技術の活用と環境負荷低減を両立する持続可能な設計で、自然環境と未来の都市に調和する建築を提案します。">
+		<meta property="og:url" content="https://sakainao-portfolio.github.io/axis/">
+		<meta property="og:image" content="image/axis_logo_ogp.png">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="AXIS ARCHITECTS（アクシス建築設計事務所）">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="image/favicon.png" type="image/png">
+		<link rel="apple-touch-icon" href="image/apple-touch-icon.png">
+		<title>AXIS ARCHITECTS（アクシス建築設計事務所）</title>
 	</head>
 
-	<body><!--文書本体要素-->
-
-		<!-- SVGフィルター -->
-		<svg width="0" height="0" style="position:absolute">
-			<!-- baseFrequencyが低周波、大きくゆったりした波、輪郭がにじんだ薄い色のうねり -->
-			<filter id="wc-edge" x="-20%" y="-20%" width="140%" height="140%">
-				<feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="3" seed="11" result="noise"/>
-				<feDisplacementMap in="SourceGraphic" in2="noise" scale="22" xChannelSelector="R" yChannelSelector="G"/>
-			</filter>
-			<!-- baseFrequencyが高周波、細かいランダムな濃淡、紙の繊維・砂粒のようなザラつき、不透明度は0.04 -->
-			<filter id="wc-grain">
-				<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="grain"/>
-				<feColorMatrix in="grain" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0"/>
-			</filter>
-		</svg>
-		<!-- SVGフィルターここまで -->
+	<body>
 
 		<!-- ヘッダー -->
 		<header>
@@ -74,28 +56,14 @@
 		</header>
 		<!-- ヘッダーここまで -->
 
-		<!--クラスの命名規則と構造定義
-		outer（div）→外側の層（ページ全体・背景・セクション間の余白を管理）
-		wrapper（div）→包む層（一つのセクション全体をまとめる）
-		area→機能別の大まかな領域・範囲（header、nav、main、footer、asideなど）
-		article要素→独立したコンテンツ（単体でも意味の通じる記事など）
-		section要素→論理的なセクション（章、節、項などテーマの区切り）
-		container（div）→セクションの箱
-		inner（div）→内側の層
-		card（div）→独立した視覚的まとまり、一つのテーマを持った情報（画像＋見出し＋テキスト＋ボタン）を囲ったもの
-		box（div）→箱、特別な意味を持たない汎用的な領域
-		content（div）→中身
-		item→具体的なコンテンツ（p、img、buttonなど最小単位）
-		-->
-
 		<!-- アウター -->
 		<div class="outer">
 
 		<!-- ヒーローエリア -->
 		<div class="hero-area" id="top-position">
-			<img src="image/axis_hero-image01.jpeg" alt="" class="hero-img01">
-			<img src="image/axis_hero-image02.jpeg" alt="" class="hero-img02">
-			<img src="image/axis_hero-image03.jpeg" alt="" class="hero-img03">
+			<img src="image/axis_hero-image01.jpg" alt="" class="hero-img01">
+			<img src="image/axis_hero-image02.jpg" alt="" class="hero-img02">
+			<img src="image/axis_hero-image03.jpg" alt="" class="hero-img03">
 			<div class="hero-text">
 				<h1><span>論理が生む、</span><span>機能的な美しさ。</span><br><span>都市と響き合う</span><span>アーキテクチャ。</span></h1>
 				<p><span>無駄を削ぎ落としたミニマルなデザインと、</span><span>最新の環境技術を融合させ、</span><br><span>持続可能な未来の都市に調和する</span><span>建築を提案します。</span></p>
@@ -118,7 +86,7 @@
 				<a data-href="news.html" class="link-btn">
 					<div class="news-box">
 						<div class="news-content-img">
-							<img src="image/axis_news-image01.jpeg" alt="" class="news-image">
+							<img src="image/axis_news-image01.jpg" alt="" class="news-image">
 						</div>
 						<div class="news-content-txt">
 							<p><span class="news-date"><time datetime="2026-06-07">2026.06.07</time></span><span class="news-type">AWARD</span></p>
@@ -129,7 +97,7 @@
 				<a data-href="news.html" class="link-btn">
 					<div class="news-box">
 						<div class="news-content-img">
-							<img src="image/axis_news-image02.jpeg" alt="" class="news-image">
+							<img src="image/axis_news-image02.jpg" alt="" class="news-image">
 						</div>
 						<div class="news-content-txt">
 							<p><span class="news-date"><time datetime="2026-05-15">2026.05.15</time></span><span class="news-type">RECRUIT</span></p>
@@ -140,7 +108,7 @@
 				<a data-href="news.html" class="link-btn">
 					<div class="news-box">
 						<div class="news-content-img">
-							<img src="image/axis_news-image03.jpeg" alt="" class="news-image">
+							<img src="image/axis_news-image03.jpg" alt="" class="news-image">
 						</div>
 						<div class="news-content-txt">
 							<p><span class="news-date"><time datetime="2026-04-09">2026.04.09</time></span><span class="news-type">EVENT</span></p>
@@ -151,7 +119,7 @@
 				<a data-href="news.html" class="news-item-4th link-btn">
 					<div class="news-box">
 						<div class="news-content-img">
-							<img src="image/axis_news-image04.jpeg" alt="" class="news-image">
+							<img src="image/axis_news-image04.jpg" alt="" class="news-image">
 						</div>
 						<div class="news-content-txt">
 							<p><span class="news-date"><time datetime="2026-03-20">2026.03.20</time></span><span class="news-type">EVENT</span></p>
@@ -177,7 +145,7 @@
 					<div class="projects-slide">
 						<a data-href="projects.html">
 							<figure class="projects-figure">
-								<img src="image/axis_hero-image03.jpeg" alt="" class="projects-image">
+								<img src="image/axis_hero-image03.jpg" alt="" class="projects-image">
 								<figcaption class="projects-caption">
 									<p><span class="projects-type">OFFICE&COMMERCIAL BUILDING</span></p>
 									<p><span class="projects-name">TOKYO TECH TOWER</span></p>
@@ -194,7 +162,7 @@
 					<div class="projects-slide">
 						<a data-href="projects.html">
 							<figure class="projects-figure">
-								<img src="image/axis_project-image02.jpeg" alt="" class="projects-image">
+								<img src="image/axis_project-image02.jpg" alt="" class="projects-image">
 								<figcaption class="projects-caption">
 									<p><span class="projects-type">RESIDENTIAL BUILDING</span></p>
 									<p><span class="projects-name">GRID HOUSE</span></p>
@@ -211,7 +179,7 @@
 					<div class="projects-slide">
 						<a data-href="projects.html">
 							<figure class="projects-figure">
-								<img src="image/axis_project-image03.jpeg" alt="" class="projects-image">
+								<img src="image/axis_project-image03.jpg" alt="" class="projects-image">
 								<figcaption class="projects-caption">
 									<p><span class="projects-type">COWORKING SPACE</span></p>
 									<p><span class="projects-name">RE:WORKSPACE</span></p>
@@ -254,21 +222,21 @@
 				</div>
 				<div class="features-box">
 					<div class="features-card">
-						<div class="features-icon"><img src="image/axis_features-image01.jpeg" alt="" class="features-icon-img"></div>
+						<div class="features-icon"><img src="image/axis_features-image01.jpg" alt="" class="features-icon-img"></div>
 						<div>
 							<h3><span class="features-number">01. PLANNING</span><br><span>高度AI技術の活用</span></h3>
 							<p><span>私たちは、建築設計において高度AI技術を活用し、データ分析とシミュレーションを通じて最適な動線設計を実現します。さらにスマートホーム技術を導入し、住まいの利便性と安全性を高めます。</span></p>
 						</div>
 					</div>
 					<div class="features-card">
-						<div class="features-icon"><img src="image/axis_features-image02.jpeg" alt="" class="features-icon-img"></div>
+						<div class="features-icon"><img src="image/axis_features-image02.jpg" alt="" class="features-icon-img"></div>
 						<div>
 							<h3><span class="features-number">02. ARCHITECTURE</span><br><span>機能的な美しさ</span></h3>
 							<p><span>私たちは、機能性と美しさを両立させた建築設計を追求します。空間の使いやすさと、視覚的な魅力を兼ね備えたデザインを通じて、住民の生活の質を向上させます。</span></p>
 						</div>
 					</div>
 					<div class="features-card">
-						<div class="features-icon"><img src="image/axis_features-image03.jpeg" alt="" class="features-icon-img"></div>
+						<div class="features-icon"><img src="image/axis_features-image03.jpg" alt="" class="features-icon-img"></div>
 						<div>
 							<h3><span class="features-number">03. SUSTAINABILITY</span><br><span>持続可能な設計</span></h3>
 							<p><span>私たちは、環境に配慮した持続可能な設計を重視します。再生可能エネルギーの活用や、環境負荷の低減を図ることで、未来の都市づくりに貢献します。</span></p>
@@ -289,7 +257,7 @@
 		<div class="corporate-wrapper">
 			<div class="corporate-container">
 				<h2>CORPORATE</h2>
-				<div class="corporate-icon"><img src="image/axis_corporate-image01.jpeg" alt="" class="corporate-icon-img"></div>
+				<div class="corporate-icon"><img src="image/axis_corporate-image01.jpg" alt="" class="corporate-icon-img"></div>
 				<div class="corporate-box">
 					<h3><span class="corporate-text">会社概要</span></h3>
 					<p><span class="corporate-text">AXIS ARCHITECTS（アクシス建築設計事務所）は、徹底したデータ分析とロジックから空間を導き出すことを強みとし、持続可能な未来の都市に調和する建築を提案します。</span></p>
@@ -303,7 +271,7 @@
 			</div>
 			<div class="recruit-container">
 				<h2>RECRUIT</h2>
-				<div class="corporate-icon"><img src="image/axis_corporate-image02.jpeg" alt="" class="corporate-icon-img"></div>
+				<div class="corporate-icon"><img src="image/axis_corporate-image02.jpg" alt="" class="corporate-icon-img"></div>
 				<div class="recruit-box">
 					<h3><span class="recruit-text">採用情報</span></h3>
 					<p><span class="recruit-text">AXIS ARCHITECTS（アクシス建築設計事務所）では、建築設計に情熱を持つ人材を募集しています。私たちと共に、未来の都市に調和する建築を創造しましょう。</span></p>
@@ -364,10 +332,10 @@
 			</div>
 			<!-- フッターメニューここまで -->
 			<div class="footer-address">
-				<address><span>東京都千代田区X-X-X&nbsp;電話番号&nbsp;0120-000-XXX&nbsp;</span><span>営業時間&nbsp;9:00～18:00(土日祝日定休)</span></address><!--addressタグは連絡先なので、営業時間は含められない。あとデフォルトは斜体になる-->
+				<address><span>東京都千代田区X-X-X&nbsp;電話番号&nbsp;0120-000-XXX&nbsp;</span><span>営業時間&nbsp;9:00～18:00(土日祝日定休)</span></address>
 			</div>
 			<div class="footer-copyright">
-				<p><small>Copyright &copy;2026 AXIS ARCHITECTS All rights reserved.</small><!--コピーライト、ライセンス条項、免責事項、法的規則など--></p>
+				<p><small>Copyright &copy;2026 AXIS ARCHITECTS All rights reserved.</small></p>
 			</div>
 		</footer>
 		<!-- フッターここまで -->
